@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/Content/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <style>
+        .row {
+            margin-bottom: 0px;
+            margin-left: 0px;
+        }
+
+        button {
+            background: url("../Content/images/button1.png");
+            background-repeat: no-repeat;
+        }
+
+        body {
+            padding-top: 50px;
+            position: relative;
+        }
+
+        pre {
+            tab-size: 8;
+        }
+
+        .rajdhani {
+            font-size: 30px;
+            margin-bottom: 10px;
+            background-image: linear-gradient(#077b8a, #a2d5c6);
+        }
+
+        .kuber {
+            font-size: 30px;
+            margin-bottom: 10px;
+            background-image: linear-gradient(#be1558,#fbcbc9);
+        }
+
+        .millean {
+            font-size: 30px;
+            margin-bottom: 10px;
+            background-image: linear-gradient(#3b4d61,#6b7b8c);
+        }
+
+        .laxmi-div {
+            background-image: url("../Content/images/laxmi.jpg"); /* The image used */
+            background-color: #cccccc; /* Used if the image is unavailable */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+            height: 400px;
+        }
+
+        .modal-content {
+            height: 400px; /* You must set a specified height */
+            border-radius: 10px;
+            padding: 0px;
+        }
+
+        .modal-body {
+            height: 100%;
+        }
+
+        .blinking {
+            /*background-image:url("../Content/images/gold-star.gif");*/
+            animation: blinkingText 1.2s infinite;
+            font-size: 30px;
+            width: 10%;
+            height: 10%;
+        }
+
+        @keyframes blinkingText {
+            0% {
+                color: #fff;
+            }
+
+            49% {
+                color: coral;
+            }
+
+            60% {
+                color: gold;
+            }
+
+            99% {
+                color: darkcyan;
+            }
+
+            100% {
+                color: #ff0000;
+            }
+        }
+
+        .modal-body {
+            padding: 0px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .side-collapse-container {
+                width: 100%;
+                position: relative;
+                left: 0;
+                transition: left .4s;
+            }
+
+                .side-collapse-container.out {
+                    left: 200px;
+                }
+
+            .side-collapse {
+                top: 50px;
+                bottom: 0;
+                left: 0;
+                width: 200px;
+                position: fixed;
+                overflow: hidden;
+                transition: width .4s;
+            }
+
+                .side-collapse.in {
+                    width: 0;
+                }
+        }
+
+        .modal-content {
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <header role="banner" class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="navbar-inverse side-collapse in">
+                <nav role="navigation" class="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="">Bids</a></li>
+                        <li><a href="">Bid History</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div style="text-align:right;">
+                <time datetime="DD-MM-YYYYThh:mm:ss" />
+            </div>
+        </div>
+    </header>
+    <div class="container side-collapse-container">
+        <div class="panel-group">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Today</div>
+                <div class="panel-body">
+                    <div class="row rajdhani">
+                        <div class="col-md-10">
+                            RAJDHANI DAY
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                    <div class="row kuber">
+                        <div class="col-md-10">
+                            KUBER
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                    <div class="row millean">
+                        <div class="col-md-10">
+                            MILLAN
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">10 Feb 2020</div>
+                <div class="panel-body">
+                    <div class="row rajdhani">
+                        <div class="col-md-10">
+                            RAJDHANI DAY
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                    <div class="row kuber">
+                        <div class="col-md-10">
+                            KUBER
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                    <div class="row millean">
+                        <div class="col-md-10">
+                            MILLAN
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">11 Feb 2020</div>
+                <div class="panel-body">
+                    <div class="row rajdhani">
+                        <div class="col-md-10">
+                            RAJDHANI DAY
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                    <div class="row kuber">
+                        <div class="col-md-10">
+                            KUBER
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                    <div class="row millean">
+                        <div class="col-md-10">
+                            MILLAN
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">12 Feb 2020</div>
+                <div class="panel-body">
+                    <div class="row rajdhani">
+                        <div class="col-md-10">
+                            RAJDHANI DAY
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                    <div class="row kuber">
+                        <div class="col-md-10">
+                            KUBER
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                    <div class="row millean">
+                        <div class="col-md-10">
+                            MILLAN
+                        </div>
+                        <div class="col-md-2">
+                            <input type="image" src="../Content/images/button1.png" height="100" width="100" value="Open" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade-in right" tabindex="-1" role="dialog" id="wishmodal">
+        <div class="modal-dialog laxmi-div" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="blinking" style="width:100%;vertical-align:middle;">All the best</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Scripts/jquery.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var sideslider = $('[data-toggle=collapse-side]');
+            var sel = sideslider.attr('data-target');
+            var sel2 = sideslider.attr('data-target-2');
+            sideslider.click(function (event) {
+                $(sel).toggleClass('in');
+                $(sel2).toggleClass('out');
+            });
+            $("#wishmodal").modal("show");
+            setTimeout(function () { $("#wishmodal").modal("hide") }, 5000);
+
+        });
+    </script>
+</body>
+</html>
